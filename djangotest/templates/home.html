@@ -97,8 +97,9 @@ document.getElementById("ttt").innerHTML = test[0];
 
 var test=test[1].split("out");
 alert(test[0]);
-//$("#test").val(test[0]);
+$("#test").val(test[0]);
 $("#out").val(test[1]);
+alert(test[1]);
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
@@ -215,8 +216,8 @@ function cpl(){
     <input type="hidden" id="src" name="source" value=""/>
     <input type="hidden" id="langc" name="lang" value=""/>
     <input type="hidden" id="test" name="testcases" value=''/>
-    <!--input type="hidden" name="csrf_token" value=""/-->
-    <input type="hidden" id="out" name="out" value=""></input>
+    
+    <input type="hidden" id="out" name="output" value=""/>
 
 </form>
 
