@@ -42,13 +42,10 @@ def get(request):
 	
 	out=int(result['result']['stdout'][0])
 
-	#out=int(out)
 	try:
 
 		output=int(output)
-		#return HttpResponse(out)	
 		if(output==out):
-			#return HttpResponse(output)	
 			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
 			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))

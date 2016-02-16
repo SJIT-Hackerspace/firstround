@@ -53,9 +53,9 @@ The shortest Distance <br>
 <h4>Sample Output:</h4>
 5<br>
 test
-[3\n2\n3\n4\n3]
+["1\n4\n4\n0"]
 out
-2
+5
 ;
 
 
@@ -82,9 +82,9 @@ Print the cube of the given number <em>N<sup>3</sup></em>.
 <li>-1000</li>
 </ol>
 test
-[3\n2\n3\n4\n3]
+["3"]
 out
-2
+27
 ;
 Write a program to print the shortest distance <em>D</em> between two infinitely long lines <em>A</em> and <em>B</em> in a two dimensional plane, given they are not parallel to each other. 
 <br>
@@ -109,9 +109,9 @@ Print the shortest distance <em>D</em> between the lines <em>A</em> and <em>B</e
 <li><em>D<em>, the distance between the two points.</li>
 </ol>
 test
-[3\n2\n3\n4\n3]
+[""]
 out
-2
+0
 ;
 
 Write a to print the fibonacci sequence of <em>N</em> terms. 
@@ -132,12 +132,12 @@ Print the fibonacci sequence of <em>N</em> space seperated terms.
 </ol>
 <h4>Sample Output</h4>
 <ol>
-<li>0 1 1 2 3</li>
-<li>0 1 1 2 3 5 8 13 21</li>
-<li>0 1 1</li>
+<li>01123</li>
+<li>01123581321</li>
+<li>011</li>
 </ol>
 test
-[3\n2\n3\n4\n3]
+["5"]
 out
-2
+01123
 ;
