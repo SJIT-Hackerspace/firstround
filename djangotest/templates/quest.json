@@ -86,6 +86,7 @@ test
 out
 27
 ;
+
 Write a program to print the shortest distance <em>D</em> between two infinitely long lines <em>A</em> and <em>B</em> in a two dimensional plane, given they are not parallel to each other. 
 <br>
 <h4>Constraints</h4>
