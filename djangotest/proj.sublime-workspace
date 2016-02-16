@@ -1,0 +1,672 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"wdc",
+				"wdcb"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"inl",
+				"inline-table"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"padin",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-muted"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"b",
+				"border-color"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"background-si",
+				"background-position"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"he",
+				"height	Attr"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"heigh",
+				"height"
+			],
+			[
+				"size",
+				"background-size"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"height",
+				"max-height"
+			],
+			[
+				"de",
+				"device-width"
+			],
+			[
+				"si",
+				"background-size"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"left",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/a/djangotest/djangotest/djangotest"
+	],
+	"file_history":
+	[
+		"/C/a/djangotest/djangotest/djangotest/urls.py",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/load.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/pg.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/bike1l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/1.5c.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/1.5c",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/english.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/hindi.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/tamil.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/5l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/15k.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/loado.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/25k.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/cartrans.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/index.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/boot.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/50l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/35l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/20l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/10l.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/dialog.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/remote.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/nav.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/ch.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/ps4.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/instyle.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/main.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/hover.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/1.5cx.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/tv.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/anime.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/lightbox.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/zoom.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/page.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/inde",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/xbox.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/apps.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/savn",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/englishx.html",
+		"/H/top10/web/music.html",
+		"/H/top10/web/instyle.css",
+		"/H/top10/web/xboxx.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/boot.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/xboxx.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/star.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/pc.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/music.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/lol.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/chck.html",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/cmt.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/styles.css",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/script.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/test.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/webUpdate.js",
+		"/C/Users/prashanth/Documents/NetBeansProjects/top10/web/fb.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/page.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/pc.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/ps4.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/xbox.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/index.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/music.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/load.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/webUpdate.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/test.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/fb.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/chck.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/pg.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/main.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/jp_ex/WebPageDynamic/web/webUpdate.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/cmt.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/coreeng.json",
+		"/C/Users/prashanth/Documents/top10/top10/trail/lol.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/instyle.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/star.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/musicx.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/manifest.json",
+		"/C/Users/prashanth/Documents/top10/top10/trail/hover.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/disc.js",
+		"/C/Users/prashanth/Documents/top10/top10/trail/pagex.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/game.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/musi",
+		"/C/Users/prashanth/Documents/top10/top10/trail/normalize.css",
+		"/C/Users/prashanth/Documents/top10/top10/trail/sub.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/text/flowtype.js",
+		"/C/Users/prashanth/Documents/cybetrix15/index.html",
+		"/C/Users/prashanth/Documents/top10/top10/trail/try.html",
+		"/C/Users/prashanth/Documents/top10/trail/hover.css",
+		"/C/Users/prashanth/Documents/top10/trail/aa.html",
+		"/C/Users/prashanth/Documents/top10/trail/lol.js"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<div class=\"dv\">",
+			".B",
+			"1.B",
+			"1.Baj",
+			"v1.jpg",
+			"1L",
+			"\\1a",
+			"15c\\",
+			"1a",
+			"15c\\",
+			"frameborder=\"0\"",
+			"\"xa\"",
+			"xa",
+			"se-pre-con",
+			"sub",
+			"img\\mi4.png",
+			"10.png",
+			"10.jpg",
+			"IMG\\mi4",
+			"wheel2",
+			"wheel",
+			"wheel2",
+			"wheel",
+			"portfolio-item",
+			"overlay",
+			"hovereffect",
+			"180px",
+			"280px",
+			"img\\",
+			"col-sm-4",
+			"180px",
+			"280px",
+			"font size=\"4\"",
+			"font size=\"3\"",
+			"overlayy",
+			"overlay",
+			"col-sm-6",
+			"35l",
+			"10a.png",
+			"10.png",
+			".png",
+			"3b.jpg",
+			"10a.jpg",
+			"20l",
+			"9)",
+			"8)",
+			"10l",
+			"5l",
+			"8a.png",
+			"15c",
+			"border",
+			"class=\"rtn\"",
+			"<div class=\"bgcr\">",
+			"<div class=\"rtn\"><input type=\"number\" class=\"rating\" id=\"test\" name=\"test\" data-min=\"1\" data-max=\"5\" value=\"0\"></div>",
+			"<div class=\"rtn\"><input type=\"number\" class=\"rating\" id=\"test\" name=\"test\" data-min=\"1\" data-max=\"5\" value=\"0\"></div> ",
+			"<ul>\n<h4><li>Xiaomi Mi 4 smartphone was launched in July 2014. The phone comes with a 5.00-inch touchscreen display with a resolution of 1080 pixels by 1920 pixels.</li> \n\n<li>The Xiaomi Mi 4 is powered by 2.5GHz quad-core Qualcomm Snapdragon 801 processor and it comes with 3GB of RAM. <br>The phone packs 16GB of internal storage cannot be expanded. As far as the cameras are concerned, the Xiaomi Mi 4 packs a 13-megapixel primary camera on the rear and a 8-megapixel front shooter for selfies. </li>\n<li>\nThe Xiaomi Mi 4 runs Android 4.4 and is powered by a 3080mAh non removable battery. It measures 139.20 x 68.50 x 8.90 (height x width x thickness) and weighs 156.00 grams. \n</li>\n<li>\nThe Xiaomi Mi 4 is a single SIM (GSM) smartphone that accepts a Micro-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, FM. Sensors on the phone include Proximity sensor, Ambient light sensor, Accelerometer, and Gyroscope. </li></h4>\n</ul>\n",
+			"bhp",
+			"\"ps\"",
+			"bgc",
+			"\"wd\"",
+			"5c",
+			"\\m",
+			"-inch<",
+			"> Android",
+			">Android",
+			"<a class=\"ms\" ><img src=\"img\\fk.png\" class=\"cn image-responsive\" width=\"120px\" height=\"35px\"> &#x20b9; &nbsp;12,999/-</a>",
+			"<tr><td>Storage</td><td>Rear Camera</td><td>BatterCapacity</td></tr>\n  ",
+			">OS",
+			">RAM",
+			">Resolution",
+			">Front-Camera",
+			">Processor",
+			">Display",
+			"Display",
+			"frameborder=\"0\"",
+			"\\t",
+			"\\tv",
+			"®",
+			"award",
+			".wd",
+			"\"",
+			"frameborder=\"0\"",
+			"\\x",
+			"\\xone",
+			"<iframe",
+			"wdd",
+			"asap",
+			"josefin",
+			"pc.jpg",
+			"f4.jpg",
+			"hal.png",
+			".jpg",
+			"ac.",
+			"<li",
+			"li",
+			"li{",
+			"in",
+			"row1",
+			"    <!--<div class=\"dropdown\">\n\n           <button class=\"btn btn-primary dropdown-toggle \" type=\"button\" href=\"#\" data-toggle=\"dropdown\" >link here<span class=\"caret\"></span></button>\n           <ul class=\"dropdown-menu\">\n           <li><a href=\"#\">a</a></li>\n           <li><a href=\"#\">a</a></li>\n           <li><a href=\"#\">a</a></li>\n           </ul>\n           </div>-->",
+			"loading",
+			"load",
+			"<!--<a class=\"ms\" hre=\"#\">http://www.flipkart.com/mi4</a>-->",
+			"ms",
+			"gry",
+			"row1",
+			"<h2>",
+			"h2",
+			"<!--<a class=\"ms\" hre=\"#\">http://www.flipkart.com/mi4</a>-->",
+			"loader",
+			"<h4>",
+			"<ul>",
+			"frameborder=\"0\"",
+			"1.T",
+			"1.E",
+			".E",
+			"h4",
+			"height",
+			"27",
+			"visible",
+			".X",
+			"1.X",
+			"1.",
+			"<div class=\"fx\">\n<h3 class=\"top\">1.top</h3>\n<!--<img src=\"mi4.jpg\" class=\"wd\"   >\n\n<p>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye</p>\n\n<h4>asdsadsadsada sadasdsa ohrowhe; wwwe bqwke w wl lwj \nasdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye</h4>-->\n</div>",
+			"url",
+			"img/",
+			"url",
+			"sub",
+			"carousel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"v1.jpe",
+			"1l",
+			"\\v1",
+			"1l\\",
+			"v1",
+			"1l\\",
+			"frameborder=\"6\"",
+			"img\\25k\\.jpg",
+			"10.jpg",
+			"10.png",
+			"img\\15k\\",
+			"wheels",
+			"wheel2",
+			"portfolio-itemc",
+			"overlayy",
+			"hovereffectt",
+			"200px",
+			"330px",
+			"img\\cars\\",
+			"img\\cars",
+			"img\\cars\\",
+			"img\\cars",
+			"col-sm-3",
+			"200px",
+			"330px",
+			"font size=\"6\"",
+			"overlay",
+			"overlayy",
+			"col-sm-4",
+			"50l",
+			"10a.jpg",
+			"3b.png",
+			"10a.png",
+			"35l",
+			" ",
+			"20l",
+			"10l",
+			"8a.jpg",
+			"5l",
+			"class=\"rtnc\"",
+			"<div class=\"rtn\"><input type=\"number\" class=\"rating\" id=\"test\" name=\"test\" data-min=\"1\" data-max=\"5\" value=\"0\"></div><div class=\"bgcr\">",
+			" ",
+			"\"psc\"",
+			"bgcr",
+			"\"wdc\"",
+			"5c\\",
+			"\\15c",
+			"-Petrol Engine<",
+			">Automatic",
+			" ",
+			">Transmission",
+			">Fuel",
+			">Milage",
+			">Max Power",
+			">Displacement",
+			">Engine",
+			"Engine",
+			"frameborder=\"6\"",
+			"\\n",
+			"\\anim",
+			" ",
+			"frameborder=\"6\"",
+			"\\t",
+			"\\tv",
+			"<iframe class=\"wd\"",
+			"img\\pc.jpg",
+			"img\\f4.jpg",
+			"img\\hal.png",
+			"x.",
+			" ",
+			"<div class=\"rtn\"><input type=\"number\" class=\"rating\" id=\"test\" name=\"test\" data-min=\"1\" data-max=\"5\" value=\"0\"></div><h4>",
+			"<div class=\"rtn\"><input type=\"number\" class=\"rating\" id=\"test\" name=\"test\" data-min=\"1\" data-max=\"5\" value=\"0\"></div><ul>",
+			"frameborder=\"6\"",
+			"<div class=\"fx\">\n<img src=\"img\\hed.png\" class=\"hed\">\n<h3 class=\"top\" >1.Xiaomi Mi 4 (139.2 x 68.5 x 8.9 mm)</h3>\n<img src=\"img\\mi4.png\" class=\"wd\"   >\n<div class=\"bgc\">\n<div class=\"wrapper\">\n<p>\n  <table style=\"width:100%; \" class=\"ps\" >\n  <tr><td>Display</td><td>Processor</td><td>Front-Camera</td></tr>\n  <tr><th >5.00-inch</th><th>SnapDragon801</th><th>8Mp</th></tr>\n  <tr ><td>Resolution</td><td>RAM</td><td>OS</td></tr>\n  <th>1890x1920pixels</th><th>3Gb</th><th>Android4.4</th>\n  <tr><td>Storage</td><td>Rear Camera</td><td>BatterCapacity</td></tr>\n  <th>16GB</th><th>13Mp</th><th>3020mAh</th>\n  </table>\n</p>\n<!--<a class=\"ms\" hre=\"#\">http://www.flipkart.com/mi4</a>-->\n<a class=\"ms\" ><img src=\"img\\fk.png\" class=\"cn image-responsive\" width=\"120px\" height=\"35px\"> &#x20b9; &nbsp;12,999/-</a>\n</div>\n</div>\n<ul>\n\n\n\n<h4><li>Xiaomi Mi 4 smartphone was launched in July 2014. The phone comes with a 5.00-inch touchscreen display with a resolution of 1080 pixels by 1920 pixels.</li> \n\n<li>The Xiaomi Mi 4 is powered by 2.5GHz quad-core Qualcomm Snapdragon 801 processor and it comes with 3GB of RAM. <br>The phone packs 16GB of internal storage cannot be expanded. As far as the cameras are concerned, the Xiaomi Mi 4 packs a 13-megapixel primary camera on the rear and a 8-megapixel front shooter for selfies. </li>\n<li>\nThe Xiaomi Mi 4 runs Android 4.4 and is powered by a 3080mAh non removable battery. It measures 139.20 x 68.50 x 8.90 (height x width x thickness) and weighs 156.00 grams. \n</li>\n<li>\nThe Xiaomi Mi 4 is a single SIM (GSM) smartphone that accepts a Micro-SIM. Connectivity options include Wi-Fi, GPS, Bluetooth, FM. Sensors on the phone include Proximity sensor, Ambient light sensor, Accelerometer, and Gyroscope. </li></h4>\n</ul>\n</div>",
+			"-16vw",
+			"-18vw",
+			"-16vw",
+			"-18vw",
+			"p=56972b1485151&s=file%3A///C%3A/Users/prashanth/Documents/top10/top10/trail/pagex.html%3F&Size=10#!56972b1485151",
+			" ",
+			"th",
+			"mi4.jpg",
+			"img src=\"ac.jpg\" class=\"wd\" ",
+			" ",
+			"width=\"23.9vw\" height=\"19vw\"",
+			"<div class=\"fx\">\n<h3 class=\"top\">1.top</h3>\n<img src=\"ac.jpg\"  width=\"340px\" height=\"320px\">\n\n<p>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye</p>\n\n<h4>asdsadsadsada sadasdsa ohrowhe; wwwe bqwke w wl lwj \nasdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye<br>asdasd sadasds gaafafasf dasdsa wqwqe qdsfsf fdf adasd as agsaga asdsda erwer yerye</h4>\n</div>",
+			"0,0,0,1",
+			"2.95",
+			"3",
+			"3.1",
+			"col-xs-12",
+			" col-md-3 container",
+			" ",
+			"col-lg-2",
+			"col-md-2",
+			"col-md-3 col-lg-3 lft",
+			"col-md-3 col-lg-3",
+			"col-md-3 col-lg-4",
+			"col-md-3",
+			"col-md-3 col-lg-offset-1",
+			"col-md-3 col-center-block",
+			"col-md-4",
+			"image.png",
+			"240",
+			"200",
+			"http://placehold.it/240x200"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "proj.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

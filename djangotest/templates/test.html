@@ -1,0 +1,34 @@
+<html>
+<head>
+	
+<script src="jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<script >
+function func(){
+alert("sd");
+	var xhttp = new XMLHttpRequest();
+     xhttp.onreadystatechange = function() {
+
+// if (xhttp.readyState == 4 && xhttp.status == 200) {
+
+alert(xhttp.status);  //  }
+  };
+  //http://api.hackerrank.com/checker/submission.json 
+  var uri="api.hackerrank.com/checker/submission.json/";
+  var enc=encodeURI(uri);
+xhttp.open("POST",enc,true);
+var text = '{ "source":"print 1" , "lang":"5" }';
+var obj = JSON.parse(text);
+xhttp.send(obj);
+}
+
+</script>
+
+<button onclick="func()" class="butn">asd</button>
+
+</body>
+</html>

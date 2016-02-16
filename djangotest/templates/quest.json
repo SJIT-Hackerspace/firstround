@@ -1,0 +1,127 @@
+Given a Sorted array of Size N, Implement Binary Search to find Position of an Integer a.
+<br><br>
+<h4>Constraints</h4>
+1 ≤ N ≤10000<br>
+
+<br>
+<h4>Input Format:<br></h4>
+The First line contains size of an array
+The second line contains the array<br>
+The third line contains the Integer to be found<br>
+<br>
+<h4>Output Format:<br></h4>
+The first line contains the position of the integer.
+
+<br><br>
+
+<h4>Sample Input <br></h4>
+3<br>
+2 3 4<br>
+3<br>
+<h4>Sample Ouput:</h4>
+2
+test
+[3\n2\n3\n4\n3]
+out
+2
+;
+
+
+Find the Distance d between given two points (x1,y1) (x2,y2) in a Two Dimensional Plane.
+<br><br>
+
+<h4>Constraints</h4>
+d ∈ I
+<br><br>
+
+
+<h4>Input Format<br><br></h4>
+The First line contains value of x1<br>
+The second line contains value of y1<br>
+The third line contains value of x2<br>
+The Fourth line contains value of y2<br>
+<br>
+<h4>Output Format<br></h4>
+The shortest Distance <br>
+<br>
+<h4>Sample Input:<br></h4>
+1<br>
+4<br>
+4<br>
+0<br>
+<br>
+<h4>Sample Output:</h4>
+5<br>
+;
+
+
+Write a program to print the cube of a given number <em>N</em>. 
+<br>
+<h4>Constraints</h4>
+-100 <= N <= 100<br>
+<h4>Input Format</h4>
+The only line of input contains the number <em>N</em>.
+<br>
+<h4>Output Format</h4>
+Print the cube of the given number <em>N<sup>3</sup></em>.
+<br>
+<h4>Sample Input</h4>
+<ol>
+<li>20</li>
+<li>3</li>
+<li>-10</li>
+</ol>
+<h4>Sample Output</h4>
+<ol>
+<li>8000</li>
+<li>37</li>
+<li>-1000</li>
+</ol>
+;
+Write a program to print the shortest distance <em>D</em> between two infinitely long lines <em>A</em> and <em>B</em> in a two dimensional plane, given they are not parallel to each other. 
+<br>
+<h4>Constraints</h4>
+<ul>
+<li>0 <= N <= 2<sup>10</sup></li>
+<li>The lines are infinitely long</li>
+<li>The are not parallel to each other</li>
+</ul>
+<h4>Input Format</h4>
+The only line of input contains the equations of the lines <em>A</em> and <em>B</em>, seperated by a whitespace.
+<br>
+<h4>Output Format</h4>
+Print the shortest distance <em>D</em> between the lines <em>A</em> and <em>B</em>
+<br>
+<h4>Sample Input</h4>
+<ol>
+<li>20x+40y=3 43x+9y=5</li>
+</ol>
+<h4>Sample Output</h4>
+<ol>
+<li><em>D<em>, the distance between the two points.</li>
+</ol>
+;
+
+Write a to print the fibonacci sequence of <em>N</em> terms. 
+<br>
+<h4>Constraints</h4>
+1 <= N <= 15<br>
+<h4>Input Format</h4>
+The only line of input contains the number <em>N</em>.
+<br>
+<h4>Output Format</h4>
+Print the fibonacci sequence of <em>N</em> space seperated terms.
+<br>
+<h4>Sample Input</h4>
+<ol>
+<li>5</li>
+<li>9</li>
+<li>3</li>
+</ol>
+<h4>Sample Output</h4>
+<ol>
+<li>0 1 1 2 3</li>
+<li>0 1 1 2 3 5 8 13 21</li>
+<li>0 1 1</li>
+</ol>
+;

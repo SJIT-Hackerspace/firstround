@@ -1,0 +1,2 @@
+import requests 
+url = "http://logs-01.loggly.com/inputs/TOKEN/tag/http/" headers = { 'accept': "application/json", 'content-type': "application/json" } response = requests.request("POST", url, data=payload, headers=headers) print(response.text)
