@@ -288,18 +288,18 @@
 	"buffers":
 	[
 		{
-			"file": "new/views.py",
+			"file": "djangotest/settings.py",
 			"settings":
 			{
-				"buffer_size": 1612,
+				"buffer_size": 3831,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "djangotest/urls.py",
+			"file": "new/views.py",
 			"settings":
 			{
-				"buffer_size": 712,
+				"buffer_size": 1995,
 				"line_ending": "Unix"
 			}
 		},
@@ -307,23 +307,15 @@
 			"file": "templates/home.html",
 			"settings":
 			{
-				"buffer_size": 6272,
+				"buffer_size": 6141,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/quest.json",
+			"file": "templates/logint.html",
 			"settings":
 			{
-				"buffer_size": 2679,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/feed.html",
-			"settings":
-			{
-				"buffer_size": 1989,
+				"buffer_size": 2907,
 				"line_ending": "Windows"
 			}
 		},
@@ -372,28 +364,30 @@
 		"/C/a/djangotest/djangotest/djangotest",
 		"/C/a/djangotest/djangotest/new",
 		"/C/a/djangotest/djangotest/new/migrations",
-		"/C/a/djangotest/djangotest/static",
 		"/C/a/djangotest/djangotest/static/djangotest",
+		"/C/a/djangotest/djangotest/static/djangotest/css",
 		"/C/a/djangotest/djangotest/templates"
 	],
 	"file_history":
 	[
+		"/C/a/djangotest/djangotest/templates/login.html",
+		"/C/a/djangotest/djangotest/templates/feed.html",
+		"/C/a/djangotest/djangotest/templates/quest.json",
+		"/C/a/djangotest/djangotest/static/djangotest/css/styles.css",
+		"/C/a/djangotest/djangotest/new/views.py",
+		"/C/a/djangotest/djangotest/djangotest/urls.py",
+		"/C/a/djangotest/djangotest/templates/home.html",
+		"/C/a/djangotest/djangotest/templates/logint.html",
 		"/C/a/djangotest/djangotest/templates/loginh.html",
 		"/C/a/djangotest/djangotest/templates/test.json",
 		"/C/a/djangotest/djangotest/static/djangotest/style.css",
-		"/C/a/djangotest/djangotest/templates/quest.json",
 		"/C/a/djangotest/djangotest/templates/frogfights.txt",
 		"/C/a/djangotest/djangotest/templates/a.html",
 		"/C/a/djangotest/djangotest/templates/test.html",
-		"/C/a/djangotest/djangotest/new/views.py",
-		"/C/a/djangotest/djangotest/templates/home.html",
 		"/C/a/djangotest/djangotest/static/djangotest/jquery.min.js",
 		"/C/a/djangotest/djangotest/templates/jquery.min.js",
 		"/C/a/djangotest/djangotest/djangotest/settings.py",
 		"/C/a/djangotest/djangotest/templates/bfs.txt",
-		"/C/a/djangotest/djangotest/templates/feed.html",
-		"/C/a/djangotest/djangotest/templates/login.html",
-		"/C/a/djangotest/djangotest/djangotest/urls.py",
 		"/C/a/djangotest/djangotest/templates/logged_out.html",
 		"/C/a/djangotest/djangotest/new/models.py",
 		"/C/a/djangotest/djangotest/new/tests.py",
@@ -503,8 +497,7 @@
 		"/C/Users/prashanth/Documents/cybetrix15/index.html",
 		"/C/Users/prashanth/Documents/top10/top10/trail/try.html",
 		"/C/Users/prashanth/Documents/top10/trail/hover.css",
-		"/C/Users/prashanth/Documents/top10/trail/aa.html",
-		"/C/Users/prashanth/Documents/top10/trail/lol.js"
+		"/C/Users/prashanth/Documents/top10/trail/aa.html"
 	],
 	"find":
 	{
@@ -522,6 +515,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"login",
+			"test",
 			"[3\\n2\\n3\\n4\\n3]",
 			"cpl()",
 			"loaddoc",
@@ -647,9 +642,7 @@
 			"frameborder=\"0\"",
 			"1.T",
 			"1.E",
-			".E",
-			"h4",
-			"height"
+			".E"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -657,6 +650,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"djangotest",
+			"testt",
 			"[\"\"]",
 			"btn-primary",
 			"1",
@@ -777,59 +772,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "new/views.py",
+					"file": "djangotest/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1612,
+						"buffer_size": 3831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1132,
-								1132
+								814,
+								814
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "djangotest/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 712,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								671,
-								671
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -840,20 +806,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "templates/home.html",
+					"buffer": 1,
+					"file": "new/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6272,
+						"buffer_size": 1995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5985,
-								5985
+								1990,
+								1990
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1310,
+								1310
 							]
 						],
 						"settings":
@@ -863,70 +858,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1232.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "templates/quest.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1460,
-								1460
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 882.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "templates/feed.html",
+					"buffer": 3,
+					"file": "templates/logint.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1989,
+						"buffer_size": 2907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								572,
-								474
+								979,
+								979
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "templates/login.html",
 					"semi_transient": false,
 					"settings":
@@ -938,8 +907,8 @@
 						"selection":
 						[
 							[
-								45,
-								123
+								0,
+								0
 							]
 						],
 						"settings":
@@ -952,7 +921,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

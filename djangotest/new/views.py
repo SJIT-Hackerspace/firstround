@@ -19,9 +19,17 @@ def quest(request):
 def test(request):
 	return render(request,"test.json",{})
 
-def loginh(request):
-	return render(request,"loginh.html",{})
-	
+def logint(request):
+	return render(request,"logint.html",{})
+
+
+def validate(request):
+    form_details = request.POST
+    user = authenticate(form_details['username'],form_details['password']);
+    
+    if user is not None:
+        if user.is_active:
+            return render(request,'/feed/')
 def get(request):
 	requestdict = request.POST
 	source = requestdict["source"]
@@ -39,10 +47,10 @@ def get(request):
 	    "api_key" : api_key
 	})
 	result = r.json()
-	
-	out=int(result['result']['stdout'][0])
-
 	try:
+		out=int(result['result']['stdout'][0])
+
+	
 
 		output=int(output)
 		if(output==out):
@@ -51,8 +59,10 @@ def get(request):
 			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
 		#return HttpResponse(out)	
 	except TypeError:	
-		return HttpResponse(output)	
+		return HttpResponse("TypeError")	
 		#return HttpResponse("Compile error:<br>"+result['result']['compilemessage'])
+	except KeyError:
+		return HttpResponse("Key error<br> Output format not recognized")	
 	except:
-		return HttpResponse(output)	
+		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")	
 

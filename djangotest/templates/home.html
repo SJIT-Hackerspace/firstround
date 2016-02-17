@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<title>Hacker_space</title>
 {%load staticfiles %}
 
 <link rel="stylesheet" href="{%static 'djangotest/style.css' %}" />
@@ -10,6 +10,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="{%static 'djangotest/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
   <script src="{%static 'load.js' %}" type="text/javascript" charset="utf-8"></script>
+  <script src="{%static 'djangotest/ace/ext-language_tools.js' %}"></script>
   <!--<script src="{%static 'djangotest/bootstrap.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
 
 <script >
@@ -22,14 +23,24 @@
 
         $('li').click(function(){
         var a=$(this).text();
+        var b=$(this).val();
         $("#langc").val(this.value);
         $('.lang').text('Selected Language :'+a);
         var temp=a.toLowerCase();
-       if(temp=="c"){
-        temp="c_cpp"
+       if(temp=="c"||temp=="c++"){
+        temp="c_cpp";
+        
+       }
+       if(b=="1"){
+        editor.session.setValue("#include<stdio.h>\nint main(){\n\n}");
+       }
+       else if(b=="2"){
+        editor.session.setValue("#include<iostream>\nusing namespace std;\nint main(){\n\n}");
+       }
+       else{
+        editor.session.setValue("");
        }
         var src='ace/mode/'+temp;
-       
          editor.getSession().setMode(src);
 
       
@@ -48,32 +59,7 @@
 <body >
 
 <script>
-/*
-function anotherone(){
 
-
-  
-
-
-
-var xhttp = new XMLHttpRequest();
-     xhttp.onreadystatechange = function() {
-// if (xhttp.readyState == 4 && xhttp.status == 200) {
-document.getElementById("ttt").innerHTML = xhttp.responseText;
-  //  }
-  };
-  //http://api.hackerrank.com/checker/submission.json 
-  /*var uri="http://api.hackerrank.com/checker/submission.json";
-  var enc=encodeURI(uri);
-xhttp.open("GET","bfs.txt",true);
- 
-    xhttp.send();
-   
- 
-
-
-}
-*/
 </script>
 
 <script language="JavaScript">
@@ -83,8 +69,7 @@ xhttp.open("GET","bfs.txt",true);
     var temp = parameters[0].split("=");
     l = unescape(temp[1]);
     var q=l.split(":");
-    //alert(q[1]); //Dialog with the text you put on the textbox
-   // var x=l+".txt"  ;
+  
    var ques=q[1];
 
     var xhttp = new XMLHttpRequest();
@@ -92,14 +77,14 @@ xhttp.open("GET","bfs.txt",true);
  if (xhttp.readyState == 4 && xhttp.status == 200) {
  // alert(xhttp.responseText);
  var res=xhttp.responseText.split(";");
- var test=res[ques].split("test");
+ var test=res[ques].split("testt");
 document.getElementById("ttt").innerHTML = test[0];
 
 var test=test[1].split("out");
-alert(test[0]);
+//alert(test[0]);
 $("#test").val(test[0]);
 $("#out").val(test[1]);
-alert(test[1]);
+//alert(test[1]);
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
@@ -160,6 +145,11 @@ xhttp.open("GET","quest.json",true);
     editor.setTheme("ace/theme/monokai");
     //editor.getSession().setMode("ace/mode/javascript");
     editor.getSession().setMode("ace/mode/c_cpp");
+    ace.require("ace/ext/language_tools");
+
+editor.setOptions({
+    enableBasicAutocompletion: true
+});
 
 </script>
 
@@ -174,21 +164,25 @@ function cpl(){
 
 }
 </script>
+<script>
+function cpll(){
+  var editor = ace.edit("editor");
+  var code=editor.getValue();
 
-</div>
-</div>
-<script >
- /* $(document).ready(function(){
-    $('#iframe').load(function(){
-        alert($(this).content);
-    });
-});*/
+  //alert(code);
+  document.getElementById('src').value=code;
+  document.getElementById('modleform').submit();
+
+}
 </script>
+</div>
+</div>
+
 </div>
 </div>
 <div class="subm ">
 <a class="com btn btn-primary page-scroll" onclick="cpl()" href="#compile">Compile &amp; Run</a>
-<button class="btn btn-primary">Submit</button>
+<button class="btn btn-primary" onclick="cpll()">Submit</button>
 </div>
 </div>
 <!--<button type="button" id="btn" onclick="lnmo()" >chk</button>-->
@@ -210,6 +204,18 @@ function cpl(){
 </form>-->
   <form name="model"
       id="moodleform" target="iframe"
+      method="POST" action="/get/" enctype='application/json'
+>
+    {% csrf_token %}
+    <input type="hidden" id="src" name="source" value=""/>
+    <input type="hidden" id="langc" name="lang" value=""/>
+    <input type="hidden" id="test" name="testcases" value=''/>
+    
+    <input type="hidden" id="out" name="output" value=""/>
+
+</form>
+ <form name="model"
+      id="modleform" target="iframe"
       method="POST" action="/get/" enctype='application/json'
 >
     {% csrf_token %}

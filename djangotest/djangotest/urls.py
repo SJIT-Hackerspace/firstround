@@ -13,6 +13,7 @@ urlpatterns = [
       url(r'^get/','new.views.get',name='get'),
       url(r'^quest.json/','new.views.quest',name='quest'),
       url(r'^test.json/','new.views.test',name='test'),
-      url(r'^loginh.html/','new.views.loginh',name='loginh'),
+      url(r'^logint/','new.views.logint',name='logint'),
+      url(r'^validate/','new.views.validate',name='validate'),
 ]
 
