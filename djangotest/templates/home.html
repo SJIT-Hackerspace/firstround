@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Hacker_space</title>
+<title>{Hacker_space}</title>
 {%load staticfiles %}
 
 <link rel="stylesheet" href="{%static 'djangotest/style.css' %}" />
@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+
   <script src="{%static 'djangotest/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
   <script src="{%static 'load.js' %}" type="text/javascript" charset="utf-8"></script>
   <script src="{%static 'djangotest/ace/ext-language_tools.js' %}"></script>
@@ -17,14 +22,15 @@
     $(document).ready(function(){
       //$("#moodleform").submit();
 
-       $('.hed').click(function(){
+  /*     $('.hed').click(function(){
         window.location.replace("http://127.0.0.1:8000/feed/");
     }) 
-
+*/
         $('li').click(function(){
         var a=$(this).text();
         var b=$(this).val();
         $("#langc").val(this.value);
+        $("#langcc").val(this.value);
         $('.lang').text('Selected Language :'+a);
         var temp=a.toLowerCase();
        if(temp=="c"||temp=="c++"){
@@ -32,13 +38,26 @@
         
        }
        if(b=="1"){
-        editor.session.setValue("#include<stdio.h>\nint main(){\n\n}");
+        editor.session.setValue("#include<stdio.h>\nint main(){\n\t//enter code here\n}");
        }
        else if(b=="2"){
-        editor.session.setValue("#include<iostream>\nusing namespace std;\nint main(){\n\n}");
+        editor.session.setValue("#include<iostream>\nusing namespace std;\nint main(){\n\t//enter code here\n}");
+       }
+       else if(b=="3"){
+        editor.session.setValue("import java.io.*;\nimport java.util.*;\n\npublic class Solution{\n\tpublic static void main(String[] args){\n\t//enter code here\n\t}\n}");
+       }
+      else if(b=="3"){
+        editor.session.setValue("import java.io.*;\nimport java.util.*;\n\npublic class Solution{\n\tpublic static void main(String[] args){\n\t//enter code here\n\t}\n}");
+       }
+       else if(b=="20"){
+        editor.session.setValue("function processData(input) {\n    //Enter your code here\n} \nprocess.stdin.resume();\nprocess.stdin.setEncoding(\"ascii\");\n_input = \"\";\nprocess.stdin.on(\"data\", function (input) {\n    _input += input;\n});\nprocess.stdin.on(\"end\", function () {\n   processData(_input);\n});");
+       }
+     
+       else if(b=="7"){
+        editor.session.setValue("<?php\n$_fp = fopen(\"php://stdin\", \"r\");\n/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n?>   ");
        }
        else{
-        editor.session.setValue("");
+        editor.session.setValue("#enter your code here");
        }
         var src='ace/mode/'+temp;
          editor.getSession().setMode(src);
@@ -54,7 +73,7 @@
 /*http://api.hackerrank.com/checker/submission.json -d 'source=print 1&lang=5&testcases=["1"]&api_key=hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3'*/
 </script>
 
-<h1 style="color:black;" ><font class="hed">Hacker Space</font></h1>
+<h1 style="color:black;" ><font class="hed">{ Hacker_Space }</font></h1>
 </head>
 <body >
 
@@ -81,9 +100,14 @@
 document.getElementById("ttt").innerHTML = test[0];
 
 var test=test[1].split("out");
-//alert(test[0]);
 $("#test").val(test[0]);
-$("#out").val(test[1]);
+//alert(test[1]);
+//alert(test[0]);
+var test=test[1].split("sub");
+//alert(test[0]);
+$("#out").val(test[0]);
+$("#outc").val(test[0]);
+$("#testc").val(test[1]);
 //alert(test[1]);
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
@@ -170,7 +194,7 @@ function cpll(){
   var code=editor.getValue();
 
   //alert(code);
-  document.getElementById('src').value=code;
+  document.getElementById('srcc').value=code;
   document.getElementById('modleform').submit();
 
 }
@@ -216,14 +240,14 @@ function cpll(){
 </form>
  <form name="model"
       id="modleform" target="iframe"
-      method="POST" action="/get/" enctype='application/json'
+      method="POST" action="/sub/" enctype='application/json'
 >
     {% csrf_token %}
-    <input type="hidden" id="src" name="source" value=""/>
-    <input type="hidden" id="langc" name="lang" value=""/>
-    <input type="hidden" id="test" name="testcases" value=''/>
+    <input type="hidden" id="srcc" name="source" value=""/>
+    <input type="hidden" id="langcc" name="lang" value=""/>
+    <input type="hidden" id="testc" name="testcases" value=''/>
     
-    <input type="hidden" id="out" name="output" value=""/>
+    <input type="hidden" id="outc" name="output" value=""/>
 
 </form>
 

@@ -15,5 +15,7 @@ urlpatterns = [
       url(r'^test.json/','new.views.test',name='test'),
       url(r'^logint/','new.views.logint',name='logint'),
       url(r'^validate/','new.views.validate',name='validate'),
+      url(r'^sub/','new.views.sub',name='sub'),
+      url(r'^register', 'new.views.register', name='register'),
 ]
 

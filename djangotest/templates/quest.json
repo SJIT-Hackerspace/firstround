@@ -24,6 +24,8 @@ testt
 ["3\n2\n3\n4\n2"]
 out
 1
+sub
+["12\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n1"]
 ;
 
 
@@ -56,6 +58,8 @@ testt
 ["1\n4\n4\n0"]
 out
 5
+sub
+["3\n2\n9\n7"]
 ;
 
 
@@ -85,6 +89,8 @@ testt
 ["3"]
 out
 27
+sub
+["3"]
 ;
 
 Write a program to print the shortest distance <em>D</em> between two infinitely long lines <em>A</em> and <em>B</em> in a two dimensional plane, given they are not parallel to each other. 
@@ -113,6 +119,8 @@ testt
 [""]
 out
 0
+sub
+[""]
 ;
 
 Write a to print the fibonacci sequence of <em>N</em> terms. 
@@ -141,4 +149,6 @@ testt
 ["5"]
 out
 01123
+sub
+["5"]
 ;

@@ -191,7 +191,7 @@
 			"file": "djangotest/djangotest/urls.py",
 			"settings":
 			{
-				"buffer_size": 488,
+				"buffer_size": 818,
 				"line_ending": "Unix"
 			}
 		}
@@ -598,20 +598,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 488,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								817,
+								817
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -682,7 +684,7 @@
 		[
 			[
 				"",
-				"C:\\a\\djangotest\\djangotest\\proj.sublime-project"
+				"C:\\a\\djangotest\\djangotest\\try.sublime-project"
 			]
 		],
 		"width": 380.0

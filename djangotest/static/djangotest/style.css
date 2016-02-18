@@ -53,10 +53,11 @@ overflow: auto;
 
     }
 
-    font {border-style: solid;
-    	border-width: 3.2px;
-    	
-
+    font {
+/*        font-family: 'Press Start 2P', cursive;*/
+    	/*font-family: 'VT323' ;*/
+/*border-style: solid;
+        border-width: 3.2px;*/
     }
 .tt{
     letter-spacing: 0px;

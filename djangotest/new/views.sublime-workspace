@@ -287,30 +287,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "new/views.py",
-			"settings":
-			{
-				"buffer_size": 3203,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/home.html",
-			"settings":
-			{
-				"buffer_size": 6861,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "djangotest/urls.py",
-			"settings":
-			{
-				"buffer_size": 818,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -342,17 +318,8 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/a/djangotest/djangotest",
-		"/C/a/djangotest/djangotest/djangotest",
-		"/C/a/djangotest/djangotest/new",
-		"/C/a/djangotest/djangotest/new/migrations",
-		"/C/a/djangotest/djangotest/templates"
-	],
 	"file_history":
 	[
-		"/C/a/djangotest/djangotest/try.sublime-project",
 		"/C/a/djangotest/djangotest/templates/login.html",
 		"/C/a/djangotest/djangotest/templates/logint.html",
 		"/C/a/djangotest/djangotest/djangotest/settings.py",
@@ -479,11 +446,12 @@
 		"/C/Users/prashanth/Documents/top10/top10/trail/text/flowtype.js",
 		"/C/Users/prashanth/Documents/cybetrix15/index.html",
 		"/C/Users/prashanth/Documents/top10/top10/trail/try.html",
-		"/C/Users/prashanth/Documents/top10/trail/hover.css"
+		"/C/Users/prashanth/Documents/top10/trail/hover.css",
+		"/C/Users/prashanth/Documents/top10/trail/aa.html"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -754,104 +722,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "new/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2167,
-								2167
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 896.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/home.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6861,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2774,
-								2774
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 56.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "djangotest/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								376,
-								376
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -885,10 +763,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "try.sublime-project",
+	"project": "views.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -907,12 +785,12 @@
 		"selected_items":
 		[
 			[
-				"",
-				"C:\\Users\\prashanth\\Documents\\NetBeansProjects\\top10\\web\\tencyclopedia.sublime-project"
-			],
-			[
 				"try",
 				"C:\\a\\djangotest\\djangotest\\try.sublime-project"
+			],
+			[
+				"",
+				"C:\\a\\djangotest\\try.sublime-project"
 			]
 		],
 		"width": 380.0
