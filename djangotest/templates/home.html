@@ -24,7 +24,7 @@
 
   /*     $('.hed').click(function(){
         window.location.replace("http://127.0.0.1:8000/feed/");
-    }) 
+    })
 */
         $('li').click(function(){
         var a=$(this).text();
@@ -35,7 +35,7 @@
         var temp=a.toLowerCase();
        if(temp=="c"||temp=="c++"){
         temp="c_cpp";
-        
+
        }
        if(b=="1"){
         editor.session.setValue("#include<stdio.h>\nint main(){\n\t//enter code here\n}");
@@ -52,7 +52,7 @@
        else if(b=="20"){
         editor.session.setValue("function processData(input) {\n    //Enter your code here\n} \nprocess.stdin.resume();\nprocess.stdin.setEncoding(\"ascii\");\n_input = \"\";\nprocess.stdin.on(\"data\", function (input) {\n    _input += input;\n});\nprocess.stdin.on(\"end\", function () {\n   processData(_input);\n});");
        }
-     
+
        else if(b=="7"){
         editor.session.setValue("<?php\n$_fp = fopen(\"php://stdin\", \"r\");\n/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n?>   ");
        }
@@ -62,12 +62,12 @@
         var src='ace/mode/'+temp;
          editor.getSession().setMode(src);
 
-      
-         
+
+
         });
 
-      
-            
+
+
         });
 
 /*http://api.hackerrank.com/checker/submission.json -d 'source=print 1&lang=5&testcases=["1"]&api_key=hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3'*/
@@ -88,7 +88,7 @@
     var temp = parameters[0].split("=");
     l = unescape(temp[1]);
     var q=l.split(":");
-  
+
    var ques=q[1];
 
     var xhttp = new XMLHttpRequest();
@@ -117,11 +117,11 @@ q[0]=q[0].replace('+',' ');
 document.getElementById("quest").innerHTML = unescape(q[0]);
   }
   };
-  
+
 xhttp.open("GET","quest.json",true);
- 
+
     xhttp.send();
-   
+
 
 
 
@@ -157,12 +157,12 @@ xhttp.open("GET","quest.json",true);
       <li value="7"><a href="#">PHP</a></li>
       <li value="20"><a href="#">JavaScript</a></li>
     </ul>
-    
+
     <b class="lang">Select A Language</b>
   </div>
 <div id="editor">
 </div>
-  
+
 <!--<iframe src="http://api.hackerrank.com/checker/languages.json"></iframe>-->
 <script>
     var editor = ace.edit("editor");
@@ -215,16 +215,16 @@ function cpll(){
     <div class="container-fluid">
     <a class="btn btn-primary top " href="#top">top</a>
 <h2>Compile Log</h2>
-<!--  <form name="model" 
-      id="moodleform" target="iframe" 
+<!--  <form name="model"
+      id="moodleform" target="iframe"
       method="post" action="http://api.hackerrank.com/checker/submission.json" enctype='application/json'
-> 
+>
     <input type="hidden" id="src" name="source" value=""/>
     <input type="hidden" id="langc" name="lang" value=""/>
     <input type="hidden" name="api_key" value="hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3"/>
     <input type="hidden" name="testcases" value='["3"]'/>
-    
-    
+
+
 </form>-->
   <form name="model"
       id="moodleform" target="iframe"
@@ -234,7 +234,7 @@ function cpll(){
     <input type="hidden" id="src" name="source" value=""/>
     <input type="hidden" id="langc" name="lang" value=""/>
     <input type="hidden" id="test" name="testcases" value=''/>
-    
+
     <input type="hidden" id="out" name="output" value=""/>
 
 </form>
@@ -246,14 +246,14 @@ function cpll(){
     <input type="hidden" id="srcc" name="source" value=""/>
     <input type="hidden" id="langcc" name="lang" value=""/>
     <input type="hidden" id="testc" name="testcases" value=''/>
-    
+
     <input type="hidden" id="outc" name="output" value=""/>
 
 </form>
 
 <div class="compilelog" >
 <iframe  id="iframe" name="iframe" width="600px" >
- 
+
 </iframe></div>
 <!--<b>Compile Message&nbsp; : &nbsp;line1,prit
                             <br> Syntax Error&nbsp;:&nbsp;invalid syntax<br><br></b>-->

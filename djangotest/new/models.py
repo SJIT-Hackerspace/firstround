@@ -1,21 +1,15 @@
 from django.db import models
+from django.contrib.auth import User
 
 
-class Contact(models.Model):
+class ScoreBoard(models.Model):
+    """Describes the Entrance Scores of Participnats """
+    Username = Models.ForeignKey(User, on_delete=models.CASCADE,primary_key=True)
+    Prob1 = Models.IntegerField(default=0)
+    Prob2 = Models.IntegerField(default=0)
+    Prob3 = Models.IntegerField(default=0)
+    Prob4 = Models.IntegerField(default=0)
+    Prob5 = Models.IntegerField(default=0)
 
-    first_name = models.CharField(
-        max_length=255,
-    )
-    last_name = models.CharField(
-        max_length=255,
-
-    )
-
-    email = models.EmailField()
-
-    def __str__(self):
-
-        return ' '.join([
-            self.first_name,
-            self.last_name,
-        ])
+    def  __str__(self)
+        return self.Username + '|' + str(self.Prob1) + '|' + str(self.Prob2) + '|' + str(self.Prob3) + '|' + str(self.Prob4) + '|' str(self.Prob5)
