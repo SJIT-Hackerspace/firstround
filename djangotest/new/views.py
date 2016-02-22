@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import render_to_response
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.http import HttpResponse, Http404
@@ -20,11 +21,12 @@ def feed(request):
 	registration_details = request.POST
 	#user = User.objects.create_user(registration_details['username'],registration_details['password'])
 	#user = User.objects.get(registration_details['username'],registration_details['password'])
-	if user is not None:
-		if user.is_active:
-			return render(request,"feed.html",{})
-		else:
-			return HttpResponse("not registered")
+	try:
+		if user is not None:
+			if user.is_active:
+				return render(request,"feed.html",{})
+			else:
+				return HttpResponse("not registered")
 	#return render(request,"feed.html",{})
 
 def quest(request):
@@ -34,7 +36,7 @@ def test(request):
 
 def logint(request):
 	return render(request,"logint.html",{})
-
+	
 
 def register(request):
     registration_details = request.POST
@@ -46,10 +48,10 @@ def register(request):
 def validate(request):
     form_details = request.POST
     user 	 = authenticate(username=form_details['username'],password=form_details['password']);
-
+    
     if user is not None:
         if user.is_active:
-            return render(request,"feed.html")
+            return render(request,"feed.html",{})
     else:
     	return HttpResponse("not registered")
 def get(request):
@@ -59,7 +61,7 @@ def get(request):
 	testcases = requestdict["testcases"]
 	output=requestdict.get("output")
 	timeout=1
-
+	
 	url = "api.hackerrank.com/checker/submission.json"
 	api_key = "hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3"
 	r = requests.post("http://api.hackerrank.com/checker/submission.json", data = {
@@ -72,21 +74,21 @@ def get(request):
 	try:
 		out=int(result['result']['stdout'][0])
 
-
+	
 
 		output=int(output)
 		if(output==out):
 			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
 			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
-		#return HttpResponse(out)
-	except TypeError:
-		return HttpResponse(result['result']['compilemessage'])
+		#return HttpResponse(out)	
+	except TypeError:	
+		return HttpResponse(result['result']['compilemessage'])	
 		#return HttpResponse("Compile error:<br>"+result['result']['compilemessage'])
 	except KeyError:
-		return HttpResponse("Key error<br> Output format not recognized")
+		return HttpResponse("Key error<br> Output format not recognized")	
 	except:
-		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")
+		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")	
 
 def sub(request):
 	requestdict = request.POST
@@ -95,7 +97,7 @@ def sub(request):
 	testcases = requestdict["testcases"]
 	output=requestdict.get("output")
 	timeout=1
-
+	
 	url = "api.hackerrank.com/checker/submission.json"
 	api_key = "hackerrank|161256-622|faa76a548e2dce2ef37df6a68d4dc0c75bd760f3"
 	r = requests.post("http://api.hackerrank.com/checker/submission.json", data = {
@@ -107,37 +109,21 @@ def sub(request):
 	result = r.json()
 	try:
 		out=int(result['result']['stdout'][0])
+
+		return HttpResponse("Submitted Successfully!")
+
 		output=int(output)
 		if(output==out):
 			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
 			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
-		#return HttpResponse(out)
-	except TypeError:
-		return HttpResponse("TypeError")
+			#return HttpResponse(out)	
+	except TypeError:	
+		return HttpResponse("TypeError")	
 		#return HttpResponse("Compile error:<br>"+result['result']['compilemessage'])
 	except KeyError:
-		return HttpResponse("Key error<br> Output format not recognized")
-
+		return HttpResponse("Key error<br> Output format not recognized")	
+	
 	except:
-		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")
-
-def tst(request, ScoreBoard):
-	current_user = request.user
-	probno = request.probid
-	if current_user.is_authenticated():
-		userscore = ScoreBoard.get_object_or_404(pk=current_user.Username)
-		if probno == 1 and userscore.Prob1 != 10:
-			userscore.Prob1 = 10
-		elif probno == 2 and userscore.Prob2 != 10:
-			userscore.Prob2 = 10
-		elif probno == 3 and userscore.Prob3 != 10:
-			userscore.Prob3 = 10
-		elif probno == 4 and userscore.Prob4 != 10:
-			userscore.Prob4 = 10
-		elif probno == 5 and userscore.Prob5 != 10:
-			userscore.Prob5 = 10
-		else
-			return Http404("Don't screw with the system")
-	else
-		return Http404("Maybe you should try logging in and try again... Douche")
+		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")	
+		
