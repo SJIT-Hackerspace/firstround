@@ -31,7 +31,7 @@ sub
 
 Find the Distance d between given two points (x1,y1) (x2,y2) in a Two Dimensional Plane.
 <br><br>
-
+d=√((x2-x1)^2-(y2-y1)^2)
 <h4>Constraints</h4>
 d ∈ I
 <br><br>
@@ -59,7 +59,7 @@ testt
 out
 5
 sub
-["3\n2\n9\n7"]
+["3\n2\n7\n5"]
 ;
 
 

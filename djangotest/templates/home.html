@@ -22,10 +22,18 @@
     $(document).ready(function(){
       //$("#moodleform").submit();
 
-  /*     $('.hed').click(function(){
-        window.location.replace("http://127.0.0.1:8000/feed/");
-    }) 
-*/
+       $('.hed').click(function(){
+        window.location.assign("http://192.168.2.94:8000/feed/");
+    }) ;
+       $('#sb').click(function(){
+        $(this).removeClass('btn-primary');
+        
+        if($(this).hasClass('btn-success')){
+          $(this).addClass('btn-danger');
+        }
+         $(this).addClass('btn-success');
+       });
+
         $('li').click(function(){
         var a=$(this).text();
         var b=$(this).val();
@@ -134,7 +142,7 @@ xhttp.open("GET","quest.json",true);
 <div class="row">
 <div class="col-sm-6">
 <div class="ps">
-<h2 id="quest">Breadth First Search </h2>
+<h2 id="quest"></h2>
 <div class="tt" id="ttt">
 
 
@@ -196,6 +204,7 @@ function cpll(){
   //alert(code);
   document.getElementById('srcc').value=code;
   document.getElementById('modleform').submit();
+  document.getElementById('sb').removeAttribute('onclick');
 
 }
 </script>
@@ -206,7 +215,7 @@ function cpll(){
 </div>
 <div class="subm ">
 <a class="com btn btn-primary page-scroll" onclick="cpl()" href="#compile">Compile &amp; Run</a>
-<button class="btn btn-primary" onclick="cpll()">Submit</button>
+<button class="btn btn-primary" id="sb" onclick="cpll()">Submit</button>
 </div>
 </div>
 <!--<button type="button" id="btn" onclick="lnmo()" >chk</button>-->
