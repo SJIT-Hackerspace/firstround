@@ -63,6 +63,9 @@
      
        else if(b=="7"){
         editor.session.setValue("<?php\n$_fp = fopen(\"php://stdin\", \"r\");\n/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n?>   ");
+       } 
+       else if(b=="199"){
+        editor.session.setValue("Select a Language");
        }
        else{
         editor.session.setValue("#enter your code here");
@@ -96,32 +99,26 @@
     var temp = parameters[0].split("=");
     l = unescape(temp[1]);
     var q=l.split(":");
-  
+      
    var ques=q[1];
-
+   
     var xhttp = new XMLHttpRequest();
      xhttp.onreadystatechange = function() {
  if (xhttp.readyState == 4 && xhttp.status == 200) {
- // alert(xhttp.responseText);
  var res=xhttp.responseText.split(";");
  var test=res[ques].split("testt");
 document.getElementById("ttt").innerHTML = test[0];
-
+$("#usrc").val(q[2]);
 var test=test[1].split("out");
 $("#test").val(test[0]);
-//alert(test[1]);
-//alert(test[0]);
 var test=test[1].split("sub");
-//alert(test[0]);
 $("#out").val(test[0]);
 $("#outc").val(test[0]);
 $("#testc").val(test[1]);
-//alert(test[1]);
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
-//alert(q[0]);
 document.getElementById("quest").innerHTML = unescape(q[0]);
   }
   };
@@ -156,7 +153,7 @@ xhttp.open("GET","quest.json",true);
     <button class="btn btn-active dropdown-toggle" type="button" data-toggle="dropdown">Language
     <span class="caret"></span></button>
     <ul class="dropdown-menu" >
-      <li ><a href="#">Language</a></li>
+      
       <li value="1"><a href="#">C</a></li>
       <li value="2"><a href="#">C++</a></li>
       <li value="3"><a href="#">Java</a></li>
@@ -255,7 +252,7 @@ function cpll(){
     <input type="hidden" id="srcc" name="source" value=""/>
     <input type="hidden" id="langcc" name="lang" value=""/>
     <input type="hidden" id="testc" name="testcases" value=''/>
-    
+    <input type="hidden" id="usrc" name="usr" value=""/>
     <input type="hidden" id="outc" name="output" value=""/>
 
 </form>

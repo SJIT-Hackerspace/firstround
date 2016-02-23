@@ -38,14 +38,22 @@ button:active{
 }
 </style>
 <center><img src="{%static 'djangotest/logo.gif'%}" height="220px;" ></center>
+<script type="text/javascript">
+	
+</script>
 </head>
 <body>
+<!--<ul>
+
+    <li><a href="{{key}}">{{username}}</a></li>
+
+</ul>-->
 <div class="container-fluid cnt">
 
 <form name="subform" action ="/" method="GET">
 <div class="row">
 <div class="col-sm-12">
-<center><button value="Binary Search:0" type="submit" name="sub" class="ques" >Binary Search</button></center>
+<center><button value="Binary Search:0:{{username}}" type="submit" name="sub" class="ques" >Binary Search</button></center>
 </div></div>
 <div class="row">
 <div class="col-sm-12">

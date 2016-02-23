@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.shortcuts import render_to_response
+from django.http import HttpResponse, Http404
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.http import HttpResponse
+from django.template import Context
+from .models import ScoreBoard
 import requests
 import os
 import json
@@ -45,6 +48,7 @@ def register(request):
     	if( registration_details['password'] == registration_details['rpassword'] ):
         	user = User.objects.create_user(username=registration_details['username'],password=registration_details['password'])
         	user.save();
+        	#userscore=ScoreBoard.
         	return render(request,"logint.html",{})
     except:
     	return HttpResponse("Already Registered") 
@@ -57,7 +61,8 @@ def validate(request):
     
     if user is not None:
         if user.is_active:
-            return render(request,"feed.html",{})
+
+        	return render(request,"feed.html",{'username':user})
     else:
     	return HttpResponse("not Registered") 
 def get(request):
@@ -101,6 +106,7 @@ def sub(request):
 	source = requestdict["source"]
 	lang = requestdict["lang"]
 	testcases = requestdict["testcases"]
+	userr=requestdict.get("usr")
 	output=requestdict.get("output")
 	timeout=1
 	
@@ -112,16 +118,45 @@ def sub(request):
 	    "testcases" : testcases,
 	    "api_key" : api_key
 	})
+
 	result = r.json()
 	try:
 		out=int(result['result']['stdout'][0])
 
-		return HttpResponse("Submitted Successfully!")
+		#return HttpResponse("user"+str(userr))
 
 		output=int(output)
 		if(output==out):
+			
+			
+			
+			
+			
+			if (output==out):
 
-			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
+ 				#userscore = ScoreBoard.get_object_or_404(pk=userr)
+ 				print("inner loop")
+ 				if probno == 1 and userscore.Prob1 != 10:
+ 					userscore.Prob1 = 10
+ 					return HttpResponse("user"+user)
+ 				elif probno == 2 and userscore.Prob2 != 10:
+ 					userscore.Prob2 = 10
+	 			elif probno == 3 and userscore.Prob3 != 10:
+ 					userscore.Prob3 = 10
+ 				elif probno == 4 and userscore.Prob4 != 10:
+ 					userscore.Prob4 = 10
+ 				elif probno == 5 and userscore.Prob5 != 10:
+ 					userscore.Prob5 = 10
+ 				else:
+ 					return Http404("Don't screw with the system")
+
+
+
+
+
+
+
+			#return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 
 		else:
 			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
@@ -132,7 +167,7 @@ def sub(request):
 	except KeyError:
 		return HttpResponse("Key error<br> Output format not recognized")	
 	
-	except:
-		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)")	
+	except Exception:
+		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)"+str(Exception))	
 		
 
