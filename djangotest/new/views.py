@@ -20,18 +20,16 @@ def a(request):
 def login(request):
 	return render(request,"login.html",{})
 def feed(request):
-	registration_details = request.POST
-	#user = User.objects.create_user(registration_details['username'],registration_details['password'])
-	#user = User.objects.get(registration_details['username'],registration_details['password'])
-	try:
-		if user is not None:
-			if user.is_active:
-				return render(request,"feed.html",{})
-			else:
-				return HttpResponse("not registered")
-	#return render(request,"feed.html",{})
-	except NameError:
-		return render(request,"feed.html",{})
+	req = request.POST
+	userr=req["user"]
+	score=req["scorec"]
+	
+	score=int(score)
+	#score=score+1
+	return render(request,"feed.html",{'username':userr,'score':score})
+	#return HttpResponse(userr) 
+
+
 
 def quest(request):
 	return render(request,"quest.json",{})
@@ -53,7 +51,16 @@ def register(request):
     except:
     	return HttpResponse("Already Registered") 
 
-		
+def bye(request):
+	req=request.POST
+	user=req['user']
+	score=req['scorec']	
+	with open('static/djangotest/finalresult.json', 'a') as f:
+		data={
+		user:score
+		}
+		json.dump(data,f)
+	return render(request,"bye.html",{'username':user,'score':score})
 
 def validate(request):
     form_details = request.POST
@@ -62,7 +69,7 @@ def validate(request):
     if user is not None:
         if user.is_active:
 
-        	return render(request,"feed.html",{'username':user})
+        	return render(request,"feed.html",{'username':user,'score':'0'})
     else:
     	return HttpResponse("not Registered") 
 def get(request):
@@ -91,7 +98,7 @@ def get(request):
 		if(output==out):
 			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
-			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
+			return HttpResponse("Output Doesn't Match the testcases"+"<br>"+"Your Output:"+(result['result']['stdout'][0]))
 		#return HttpResponse(out)	
 	except TypeError:	
 		return HttpResponse(result['result']['compilemessage'])	
@@ -108,6 +115,10 @@ def sub(request):
 	testcases = requestdict["testcases"]
 	userr=requestdict.get("usr")
 	output=requestdict.get("output")
+	score=requestdict.get("scoref")
+	qno=requestdict.get("qno")
+	qno=int(qno)
+	score=int(score)
 	timeout=1
 	
 	url = "api.hackerrank.com/checker/submission.json"
@@ -120,6 +131,8 @@ def sub(request):
 	})
 
 	result = r.json()
+	
+
 	try:
 		out=int(result['result']['stdout'][0])
 
@@ -127,39 +140,32 @@ def sub(request):
 
 		output=int(output)
 		if(output==out):
-			
-			
-			
-			
-			
-			if (output==out):
-
- 				#userscore = ScoreBoard.get_object_or_404(pk=userr)
- 				print("inner loop")
- 				if probno == 1 and userscore.Prob1 != 10:
- 					userscore.Prob1 = 10
- 					return HttpResponse("user"+user)
- 				elif probno == 2 and userscore.Prob2 != 10:
- 					userscore.Prob2 = 10
-	 			elif probno == 3 and userscore.Prob3 != 10:
- 					userscore.Prob3 = 10
- 				elif probno == 4 and userscore.Prob4 != 10:
- 					userscore.Prob4 = 10
- 				elif probno == 5 and userscore.Prob5 != 10:
- 					userscore.Prob5 = 10
- 				else:
- 					return Http404("Don't screw with the system")
-
-
-
-
-
-
-
-			#return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
+			try:
+				score=score+1
+				with open('static/djangotest/result.json', 'r+') as f:
+					data1 = json.load(f)
+					a=data1[userr]
+					a=a+1
+					pos=f.tell()
+					a=a.str()
+					us=userr+a
+					data={
+					us:a
+					}
+					json.dump(data,f)
+								
+				#return HttpResponse("Submitted Successfully!")
+				return render(request,"home.html",{'username':userr,'score':score,'result':'true'})
+			except:
+				with open('static/djangotest/result.json', 'a+') as f:
+					data={
+					userr:qno
+					}
+					json.dump(data,f)
+					return render(request,"feed.html",{'username':userr,'score':score})
 
 		else:
-			return HttpResponse("Expected Output :"+str(output)+"<br>"+"Output:"+(result['result']['stdout'][0]))
+			return render(request,"feed.html",{'username':userr,'score':score})
 			#return HttpResponse(out)	
 	except TypeError:	
 		return HttpResponse("TypeError")	

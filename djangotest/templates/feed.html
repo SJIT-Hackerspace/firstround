@@ -45,7 +45,7 @@ button:active{
 <body>
 <!--<ul>
 
-    <li><a href="{{key}}">{{username}}</a></li>
+    <li><a href="{{key}}">{{username}}:{{score}}</a></li>
 
 </ul>-->
 <div class="container-fluid cnt">
@@ -53,20 +53,20 @@ button:active{
 <form name="subform" action ="/" method="GET">
 <div class="row">
 <div class="col-sm-12">
-<center><button value="Binary Search:0:{{username}}" type="submit" name="sub" class="ques" >Binary Search</button></center>
+<center><button value="Binary Search:0:{{username}}:{{score}}" type="submit" name="sub" class="ques" >Binary Search</button></center>
 </div></div>
 <div class="row">
 <div class="col-sm-12">
-<center><button value="Distance Between 2Points:1" type="submit" name="sub" class="ques">Distance Between 2 Points</button></center>
+<center><button value="Distance Between 2Points:1:{{username}}:{{score}}" type="submit" name="sub" class="ques">Distance Between 2 Points</button></center>
 </div></div>
 <div class="row">
 <div class="col-sm-12">
-<center><button value="a^3:2" type="submit" name="sub" class="ques">a^3</button></center>
+<center><button value="a^3:2:{{username}}:{{score}}" type="submit" name="sub" class="ques">a^3</button></center>
 </div></div>
 <div class="row">
 <div class="col-sm-12">
-<center><button value="Shortest Distance Between 2Lines:3" type="submit" name="sub" class="ques">Shortest Distance Between 2 Lines</button></div></div></center>
-<center><button value="Fibonacci:4" type="submit" name="sub" class="ques">Fibonacci</button></center>
+<center><button value="Shortest Distance Between 2Lines:3:{{username}}:{{score}}" type="submit" name="sub" class="ques">Shortest Distance Between 2 Lines</button></div></div></center>
+<center><button value="Fibonacci:4:{{username}}:{{score}}" type="submit" name="sub" class="ques">Fibonacci</button></center>
 </form>
 
 </body>

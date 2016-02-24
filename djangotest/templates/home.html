@@ -17,13 +17,33 @@
   <script src="{%static 'load.js' %}" type="text/javascript" charset="utf-8"></script>
   <script src="{%static 'djangotest/ace/ext-language_tools.js' %}"></script>
   <!--<script src="{%static 'djangotest/bootstrap.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
-
+<button class="btn btn-primary" id="chckout" >Checkout</button>
 <script >
     $(document).ready(function(){
       //$("#moodleform").submit();
+      var res=$("#result").val();
+      var result=$("#username").val();
+      alert(res);
+      if(res=="true"){
+//      alert(result);
+  //    alert(res);
+      
+      var score=$("#scoref").val();
 
+      score=score+1;
+      alert(score);
+      $("#scoref").val(score);
+      $("#scorec").val(score);
+document.getElementById('home').submit();
+
+
+      }
+      $('#chckout').click(function(){
+       document.getElementById('chck').submit(); 
+      })
        $('.hed').click(function(){
-        window.location.assign("http://192.168.2.94:8000/feed/");
+       // window.location.assign("http://192.168.2.94:8000/feed/");
+       document.getElementById('home').submit();
     }) ;
        $('#sb').click(function(){
         $(this).removeClass('btn-primary');
@@ -108,12 +128,19 @@
  var res=xhttp.responseText.split(";");
  var test=res[ques].split("testt");
 document.getElementById("ttt").innerHTML = test[0];
+alert(q[2]);
+$("#qno").val(q[3]);
 $("#usrc").val(q[2]);
+$("#finalusername").val(q[2]);
 var test=test[1].split("out");
 $("#test").val(test[0]);
 var test=test[1].split("sub");
 $("#out").val(test[0]);
 $("#outc").val(test[0]);
+$("#outf").val(q[2]);
+$("#scorec").val(q[3]);
+$("#scoref").val(q[3]);
+$("#finalscore").val(q[3]);
 $("#testc").val(test[1]);
 q[0]=q[0].replace('+',' ');
 q[0]=q[0].replace('+',' ');
@@ -201,6 +228,7 @@ function cpll(){
   //alert(code);
   document.getElementById('srcc').value=code;
   document.getElementById('modleform').submit();
+  
   document.getElementById('sb').removeAttribute('onclick');
 
 }
@@ -245,7 +273,7 @@ function cpll(){
 
 </form>
  <form name="model"
-      id="modleform" target="iframe"
+      id="modleform" 
       method="POST" action="/sub/" enctype='application/json'
 >
     {% csrf_token %}
@@ -254,9 +282,38 @@ function cpll(){
     <input type="hidden" id="testc" name="testcases" value=''/>
     <input type="hidden" id="usrc" name="usr" value=""/>
     <input type="hidden" id="outc" name="output" value=""/>
+    <input type="hidden" id="scoref" name="scoref" value=""/>
+    <input type="hidden" id="qno" name="qno" value=""/>
+    
+
+</form>
+  <form name="model"
+      id="home"
+      method="POST" action="/feed/" enctype='application/json'
+>
+    {% csrf_token %}
+  
+    
+    <input type="hidden" id="outf" name="user" value=""/>
+    <input type="hidden" id="scorec" name="scorec" value=""/>    
 
 </form>
 
+  <form name="model"
+      id="chck"
+      method="POST" action="/bye/" enctype='application/json'
+>
+    {% csrf_token %}
+ 
+    
+    <input type="hidden" id="finalusername" name="user" value=""/>
+    <input type="hidden" id="finalscore" name="scorec" value=""/>    
+
+</form>
+
+
+<input type="hidden" id="username" name="username" value="{{username}}"/>
+<input type="hidden" id="result" name="result" value="{{result}}"/>
 <div class="compilelog" >
 <iframe  id="iframe" name="iframe" width="600px" >
  
