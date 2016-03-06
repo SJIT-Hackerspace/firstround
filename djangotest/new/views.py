@@ -3,9 +3,6 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponse, Http404
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
-from django.http import HttpResponse
-from django.template import Context
-from .models import ScoreBoard
 import requests
 import os
 import json
@@ -71,7 +68,7 @@ def validate(request):
 
         	return render(request,"feed.html",{'username':user,'score':'0'})
     else:
-    	return HttpResponse("not Registered") 
+    	return HttpResponse("not registered")
 def get(request):
 	requestdict = request.POST
 	source = requestdict["source"]
@@ -176,4 +173,3 @@ def sub(request):
 	except Exception:
 		return HttpResponse("Compile error<br> Unexcpected output (output type not allowed)"+str(Exception))	
 		
-
