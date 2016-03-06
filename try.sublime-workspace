@@ -191,7 +191,7 @@
 			"file": "djangotest/djangotest/urls.py",
 			"settings":
 			{
-				"buffer_size": 818,
+				"buffer_size": 996,
 				"line_ending": "Unix"
 			}
 		}
@@ -598,15 +598,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 818,
+						"buffer_size": 996,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								817,
-								817
+								0,
+								0
 							]
 						],
 						"settings":

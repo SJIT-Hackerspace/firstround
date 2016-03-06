@@ -31,7 +31,7 @@ sub
 
 Find the Distance d between given two points (x1,y1) (x2,y2) in a Two Dimensional Plane.
 <br><br>
-d=√((x2-x1)^2-(y2-y1)^2)
+d=√((x2-x1)^2+(y2-y1)^2)
 <h4>Constraints</h4>
 d ∈ I
 <br><br>
@@ -82,7 +82,7 @@ Print the cube of the given number <em>N<sup>3</sup></em>.
 <h4>Sample Output</h4>
 <ol>
 <li>8000</li>
-<li>37</li>
+<li>27</li>
 <li>-1000</li>
 </ol>
 testt

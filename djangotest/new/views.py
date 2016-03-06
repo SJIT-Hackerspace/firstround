@@ -96,7 +96,7 @@ def get(request):
 
 		output=int(output)
 		if(output==out):
-			return HttpResponse("Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
+			return HttpResponse("Success<br>  Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
 			return HttpResponse("Output Doesn't Match the testcases"+"<br>"+"Your Output:"+(result['result']['stdout'][0]))
 		#return HttpResponse(out)	
