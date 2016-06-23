@@ -7,6 +7,14 @@ import requests
 import os
 import json
 import sys
+
+
+import smtplib
+
+from email6.mime.text import MIMEText
+from email6.mime.base import MIMEBase
+
+from email6.mime.multipart import MIMEMultipart
 # Create your views here.
 """registration_details = request.POST
 user = User.objects.create_user(registration_details['username'],registration_details['password'])"""
@@ -25,7 +33,7 @@ def feed(request):
 	#score=score+1
 	return render(request,"feed.html",{'username':userr,'score':score})
 	#return HttpResponse(userr) 
-
+	
 
 
 def quest(request):
@@ -57,6 +65,30 @@ def bye(request):
 		user:score
 		}
 		json.dump(data,f)
+	fromaddr = 'sjit.hacker.space@gmail.com'
+	toaddrs  = 'theincredible13@gmail.com'
+
+
+
+	container = MIMEMultipart('alternative')
+
+	msg = "<html><body>Your score<p>"+str(score)+"</p><br>asd</br></body></html>"
+
+	#msg="lol"
+	message = MIMEText(msg, 'html')
+	container.attach(message)
+	container['From'] = fromaddr
+	
+
+	container['Subject'] = 'Hacker_space'
+	username = 'sjit.hacker.space@gmail.com'
+	password = 'sjithackerspace'
+	server = smtplib.SMTP('smtp.gmail.com:587')
+	#server.ehlo()
+	server.starttls()
+	server.login(username,password)
+	server.sendmail(fromaddr, toaddrs, container.as_string())
+	server.quit()	
 	return render(request,"bye.html",{'username':user,'score':score})
 
 def validate(request):
@@ -95,7 +127,7 @@ def get(request):
 		if(output==out):
 			return HttpResponse("Success<br>  Output: "+result['result']['stdout'][0]+ "<br>" +"Compile Time: "+str(result['result']['time'][0])	)
 		else:
-			return HttpResponse("Output Doesn't Match the testcases"+"<br>"+"Your Output:"+(result['result']['stdout'][0]))
+			return HttpResponse("Wrong Answer. Try Again!"+"<br>"+"Your Output:"+(result['result']['stdout'][0]))
 		#return HttpResponse(out)	
 	except TypeError:	
 		return HttpResponse(result['result']['compilemessage'])	
